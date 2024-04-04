@@ -1,0 +1,40 @@
+
+
+
+
+
+//Post Section
+#blog-container {
+    .postpage {
+        width: 60%;
+        margin: 0 auto;
+
+       /* @include mobile {
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        @include mobile-sm {
+            width: 100%;
+            margin-top: 70px;
+        }*/
+    }
+
+    .postpage img {
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+
+        /*@include mobile {
+            width: 100%;
+            height: 50vh;
+            object-fit: cover;
+        }*/
+    }
+
+    .postpage p {
+        padding-bottom: 60px !important;
+        text-align: justify;
+    }
+    
+}

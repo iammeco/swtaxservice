@@ -1,0 +1,289 @@
+@mixin mobiles {
+    @media (max-width: $mobile) {
+        @content;
+    }
+    
+}
+
+@mixin xsmobiles {
+    @media (max-width: $xsmobile) {
+        @content;
+    }
+    
+}
+
+@mixin sm-mobile {
+    @media (max-width: $smmobile) {
+        @content;
+    }
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ralewaymedium', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $mainbackground-color;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    
+    background-image: url("images/back9.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.1s;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 35);
+    /*letter-spacing: .2rem;
+    text-transform: capitalize;
+    text-align: center;*/
+
+    @include sm-mobile {
+        font-size: 2rem;
+    }
+}
+
+span {
+    font-size: .9rem;
+    color: #757373;
+}
+ 
+
+h3 {
+    font-size: 1.17em;
+    color: rgb(35, 35, 35);
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+button {
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+}
+
+//Header Section
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    
+}
+
+//Top-Bar Section
+.top_bar {
+    background-color: $topbackbackground-color;
+    background-image: linear-gradient(to bottom right, #ba5c44, #da9e8e);
+}
+
+.top_bar_content {
+    height: 30px;
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    column-gap: 20px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.35);
+
+    @include xsmobiles {
+        font-size: 10px;
+    }
+}
+
+.icon {
+    margin-right: 3px;
+    color: rgba(255, 255, 255, 0.17);
+}
+
+//Bottom-Bar Section
+.bottom_bar {
+    background-color: rgb(234, 22, 93);
+}
+
+.bottom_bar_content {
+    min-height: 60px;
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    vertical-align: middle;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.logo_img {
+    height: 30px;
+}
+
+.logo_text {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    font-family: 'cormorantbold_italic', sans-serif;
+}
+
+.nav {
+    transition: all 0.3s ease-in-out;
+
+    @include mobiles {
+        position: fixed;
+        top: 90px;
+        left: -100%;
+        transform: translateX(-50%);
+        background-color: rgb(19, 22, 26);
+        width: 100%;
+        padding: 10px 0 25px;
+
+    }
+}
+
+.nav_list {
+    display: flex;
+    column-gap: 40px;
+
+    @include mobiles {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+
+    }
+}
+
+.nav_item {
+    
+}
+
+.nav_link {
+    color: rgba(255, 255, 255, 0.75);
+    transition: all 0.2s;
+
+    @include mobiles {
+        font-size: 14px;
+      }
+}
+
+.nav_link:hover,
+.nav_link:focus {
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn_contact {
+    color: #fff;
+    background-color: rgb(136, 16, 63);
+    padding: 8px 20px;
+    border-radius: 1000px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    @include mobiles {
+        font-size: 11px;
+        padding: 7px 17px;
+      }
+
+    
+}
+
+.btn_contact:hover {
+    background-color: rgb(153, 75, 105);
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+
+    @include mobiles {
+        display: block;
+      }
+}
+  
+.bar {
+    height: 2px;
+    width: 27px;
+    background-color: #fff;
+    margin: 5px 0;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+  
+/* For JS */
+.nav--open {
+    left: 50% !important;
+}
+  
+.hamburger--open {
+    .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+}
+  
+.hamburger--open {
+    .bar:nth-child(2) {
+        opacity: 0;
+    }
+}
+
+.hamburger--open {
+    .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+   }
+} 
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

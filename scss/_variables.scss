@@ -1,0 +1,38 @@
+$primary-color: #232323;
+$accent-color: #ff6521;
+$text-color: #e76565;
+$smmobile: 480px;
+$mobile: 650px;
+$ipads: 769px;
+$xsmobile: 360px;
+$mxsmscreens: 1024x;
+$mxlgscreens: 1201px;
+$smscreen: 320px;
+$mdscreenmin: 568px;
+$lgscreenmin: 968px;
+
+/*========== Colors ==========*/
+$hue-color: 340;
+
+/* HSL color mode */
+$first-color: hsl($hue-color, 96%, 54%);
+$first-color-light: hsl($hue-color, 96%, 69%);
+$first-color-alt: hsl($hue-color, 96%, 37%);
+$first-color-lighter: hsl($hue-color, 14%, 96%);
+$title-color: hsl($hue-color, 12%, 15%);
+$text-color: hsl($hue-color, 12%, 35%);
+$text-color-light: hsl($hue-color, 12%, 69%);
+$white-color: #fff;
+$plan-color: #fff;
+$mainbackground-color: #f7eee8;
+$topbackbackground-color: rgb(186, 92, 68);
+
+/*========== Font and typography ==========*/
+$body-font: 'Lato', sans-serif;
+$pricing-font: 'Rubik', sans-serif;
+$biggest-font-size: 1.75rem;
+$normal-font-size: .938rem;
+$h2-font-size: 1.25rem;
+$small-font-size: .813rem;
+$smaller-font-size: .75rem;
+$tiny-font-size: .625rem;

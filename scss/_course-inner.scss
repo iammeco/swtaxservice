@@ -1,0 +1,168 @@
+
+
+
+//Course Inner
+#course-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8vw;
+
+    .overview {
+        width: 70%;
+
+        /*@include mobile {
+            width: 100%;
+            padding-bottom: 30px;
+        }*/
+    }
+
+    .overview .course-img {
+        width: 100%;
+        height: 65vh;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 20px;
+
+        /*@include mobile {
+            width: 100%;
+            height: 100%;
+        }*/
+    }
+
+    h3 {
+        padding: 35px 0 25px 0;
+        color: #29303B;
+    }
+
+    p {
+        color: #64626e;
+    }
+
+    hr {
+        height: 1px;
+        background: rgba(236, 226, 229, 0.5);
+        margin-top: 40px;
+    }
+
+    .overview .course-head .c-name {
+        width: 70%;
+    }
+
+    .overview .course-head h2 {
+        color: #29303B;
+
+        /*@include mobile-sm {
+            font-size: 22px;
+        }*/
+    }
+
+    .overview .course-head .star {
+        margin: 6px 0;
+    }
+
+    .overview .course-head i {
+        color: #FDC93B;
+        font-size: .9rem;
+    }
+
+    .overview .course-head p {
+        font-size: 15px;
+    }
+
+    .overview .course-head span {
+        padding: 16px 22px 13px;
+        border-radius: 5px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #5838fc;
+        background: rgba(88, 56, 252, 0.1);
+
+        /*@include mobile-sm {
+            font-size: 22px;
+        }*/
+    }
+
+    .learn p {
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+
+    .learn p i {
+        color: #654ce4;
+        font-weight: 700;
+        margin-right: 20px;
+    }
+
+    .tutor {
+        display: flex;
+        /* margin: 25px 0; */
+    }
+
+    .tutor img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+    .tutor h5 {
+        font-size: 16px;
+    }
+
+    .tutor p {
+        font-size: 15px;
+    }
+
+    .enroll {
+        width: 300px;
+        padding: 0px 30px 30px 30px;
+        border-radius: 11px;
+        box-shadow: 0px 20px 40px 0px rgb(11 2 55 / 8%);
+
+        /*@include mobile-sm {
+            width: 100%;
+        }*/
+    }
+
+    .enroll h3 {
+        padding-bottom: 10px;
+    }
+
+    .enroll p {
+        font-size: 15px;
+        color: #64626e;
+        margin: 15px 0;
+    }
+
+    .enroll p i {
+        color: #654ce4;
+        font-weight: 500;
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        margin-right: 18px;
+        text-align: center;
+    }
+
+    .enroll-btn {
+        padding: 25px 0 20px 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    .enroll-btn a.blue {
+        text-decoration: none;
+        width: 300px;
+        font-size: 0.8rem;
+        padding: 13px 45px;
+        border-radius: 5px;
+        font-weight: 600;
+        /* color: rgb(21, 21, 100); */
+        color: #fff;
+        border: 1px solid #412e88;
+        background: rgb(50, 50, 136);
+    }
+
+
+}
